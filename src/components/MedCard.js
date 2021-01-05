@@ -1,11 +1,12 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import Styles from '../Styles';
 
 const MedCard = (props) => {
     return(
-        <View>
-            <Text>{props.name}</Text>
-            <Text>{props.dosage}</Text>
+        <View style={Styles.medicine}>
+            <Text style={Styles.name}>{props.name}</Text>
+            <Text style={Styles.dosage}>{props.dosage}</Text>
         </View>
     );
 }
